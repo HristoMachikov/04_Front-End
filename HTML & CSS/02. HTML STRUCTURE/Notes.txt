@@ -1,0 +1,4 @@
+url - universal resorce location
+http://schema.org
+www.europeana.eu
+www.archive.org

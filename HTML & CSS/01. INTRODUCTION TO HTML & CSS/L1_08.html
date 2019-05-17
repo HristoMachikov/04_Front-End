@@ -12,7 +12,7 @@
             <legend>Customer Details</legend>
             <p>
                 <label for="firstname">First Name</label>
-                <input type="text" id="firstname" placeholder="George">
+                <input type="text" id="firstname" placeholder="George" tabindex="1" autofocus>
             </p>
             <p>
                 <label for="lastname">Last Name</label>
@@ -20,18 +20,18 @@
             </p>
             <p>
                 <label for="male">Male</label>
-                <input type="radio" id="male">
+                <input type="radio" name="gender" id="male">
                 <label for="female">Female</label>
-                <input type="radio" id="female">
+                <input type="radio" name="gender" id="female">
                 <label for="other">Other</label>
-                <input type="radio" id="other">
+                <input type="radio" name="gender" id="other">
             </p>
             <p>
                 <span>Preferred contact method:</span>
                 <label for="prefemail">Email</label>
-                <input type="radio" id="prefemail">
+                <input type="radio" name="contacts" id="prefemail">
                 <label for="prefphone">Phone</label>
-                <input type="radio" id="prefphone">
+                <input type="radio" name="contacts" id="prefphone">
             </p>
             <p>
                 <label for="email">Email</label>
@@ -59,13 +59,13 @@
                 <label for="language">Programming language</label>
                 <input list="languages" id="language">
                 <datalist id="languages">
-                    <option value="Java">
-                    <option value="PHP">
-                    <option value="C#">
-                    <option value="JavaScript">
-                    <option value="Python">
-                    <option value="Ruby">
-                    <option value="Other">
+                    <option value="Java"></option>
+                    <option value="PHP"></option>
+                    <option value="C#"></option>
+                    <option value="JavaScript"></option>
+                    <option value="Python"></option>
+                    <option value="Ruby"></option>
+                    <option value="Other"></option>
                 </datalist>
             </p>
             <p>
