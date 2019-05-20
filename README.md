@@ -1,6 +1,6 @@
 04_Front-End
 ============
-![Alt text](/tree/master/HTML%20%26%20CSS/00.%20INTRO%20%26%20PRESENTATIONS/HTML&CSS.png)
+![ ](/tree/master/HTML%20%26%20CSS/00.%20INTRO%20%26%20PRESENTATIONS/HTML&CSS.png)
 
 HTML & CSS
 ----------
