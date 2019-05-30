@@ -1,0 +1,87 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    padding: 2em;
+    margin: auto;
+    max-width: 60em;
+    color: rgb(51, 51, 51);
+    background: rgb(238, 238, 238);
+}
+
+html {
+    font: 16px/1.5 verdana, sans-serif;
+    box-sizing: border-box;
+}
+
+section, article, table, input, form {
+    font: inherit;
+    padding-bottom: 0.5em;
+    box-sizing: inherit;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    padding-bottom: 0.7em;
+    font-family: Georgia, serif;
+}
+
+p {
+    padding-bottom: 1em;
+}
+
+h1 {
+    font-size: 2.441em;
+}
+
+h2 {
+    font-size: 1.953em;
+}
+
+h3 {
+    font-size: 1.563em;
+}
+
+h4 {
+    font-size: 1.25em;
+}
+
+h5 {
+    font-size: 1em;
+}
+
+h6 {
+    font-size: 0.8em;
+}
+
+ul {
+    list-style-position: inside;
+    padding-left: 1.5em;
+    padding-bottom: 1em;
+}
+
+.image img {
+    display: block;
+    max-width: 70%;
+    height: auto;
+}
+
+/* .site-content {
+    border: 1px solid black;
+} */
+
+.main-content, .main-sitebar {
+    display: inline-block;
+}
+
+.main-content {
+    /* border: 1px solid blue; */
+    width: 70%;
+}
+
+.main-sitebar {
+    /* border: 1px solid red; */
+    width: 29%;
+    vertical-align: top;
+}

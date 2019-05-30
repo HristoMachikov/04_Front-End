@@ -1,0 +1,26 @@
+html {
+    box-sizing: border-box;
+}
+
+
+.galery {
+    box-sizing: inherit;
+    max-width: 100%;
+    padding: 1em;
+}
+
+li img {
+    max-width: 100%;
+    height: auto;
+}
+
+li {
+    display: inline-block;
+    border-width: 04.rem;
+    border-color: black;
+    border-style: solid;
+    padding: 1em;
+    background: white;
+    margin: 0.5em;
+    max-width: 33.33%;
+}

@@ -1,0 +1,21 @@
+@import url(https://use.fontawesome.com/releases/v5.8.2/css/all.css);
+body {
+    padding: 3em;
+}
+
+.button {
+    border: 1px solid orange;
+    border-radius: 0.3em;
+    padding: 0.5em;
+    color: white;
+    background: orange;
+}
+
+body p:first-child a {
+    background: green;
+    border: green;
+}
+
+p {
+    padding-bottom: 1em;
+}

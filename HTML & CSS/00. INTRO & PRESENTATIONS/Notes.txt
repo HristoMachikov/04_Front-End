@@ -1,8 +1,7 @@
 url - universal resorce location
 http://schema.org
-www.europeana.eu
 www.archive.org
-
+-------------------------
 html {
 font: 16px/1.2 font-family;
 }
@@ -12,3 +11,18 @@ font: inherit;
 }
 
 type-scale.com
+----------------------
+62.5% x 16 = 10px
+user-engine = browser
+PT sans google font 
+
+article:first-child:last-child == article:only-child
+family.scss
+input[type^="text"] - атрибут започващ с text
+input[type*="fa-"] - атрибут имащ fa-
+
+emmet VS Code
+col row margine = col-span="6" 
+----------
+unsplash.com
+www.europeana.eu

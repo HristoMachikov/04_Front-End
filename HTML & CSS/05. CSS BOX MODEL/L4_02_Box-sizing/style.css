@@ -1,0 +1,36 @@
+html {
+    font-size: 16px;
+    line-height: 1.5;
+    font-family: Geneva, Verdana, sans-serif;
+    box-sizing: inherit;
+}
+
+body, section, p {
+    font: inherit;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 2em 0;
+    margin: auto;
+}
+
+section {
+    width: 250px;
+    height: 240px;
+    border: dashed green 5px;
+    margin: auto;
+    text-align: center;
+}
+
+/* p {
+    border: 5px solid blue;
+    max-width: 100%;
+    padding: 20px;
+} */
+
+p {
+    border: solid blue 5px;
+    padding: 20px;
+    width: 100%;
+}
