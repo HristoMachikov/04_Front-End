@@ -26,3 +26,10 @@ col row margine = col-span="6"
 ----------
 unsplash.com
 www.europeana.eu
+----------------
+font-family:"Font Awesome 5 Free";
+font-family:"Font Awesome 5 Brands";
+font-weight: 900; 
+mycolor.space/gradient 
+bem - конвенция за класове  
+block-element-modifier
