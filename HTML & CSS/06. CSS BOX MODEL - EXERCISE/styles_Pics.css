@@ -1,0 +1,141 @@
+@import url('typography.css');
+/* Layout */
+
+body {
+    padding: 2rem;
+}
+
+.site {
+    max-width: 60%;
+    margin: 0 auto;
+}
+
+/* .main-content, .main-sidebar {
+    display: inline-block;
+} */
+
+/* .main-content {
+    
+    display: inline-block;
+    width: 100%;
+    height: 0 auto;
+} */
+
+/* navigation */
+
+.site-header nav {
+    background: black;
+}
+
+.site-header nav ul:after {
+    display: block;
+    content: '';
+    clear: both;
+    background: #000;
+}
+
+.site-header nav li {
+    display: block;
+   position: relative;
+}
+
+.site-header nav>ul>li {
+    float: left;
+}
+.site-header nav>ul>li>ul>li ul{
+    top:0;
+    left: 100%;
+}
+.site-header nav > ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    width: 10em;
+}
+
+.site-header nav li:hover > ul {
+    display: block;
+}
+
+.site-header nav a {
+    display: block;
+    /* outline: 1px solid #999; */
+    border: 1px solid #999;
+    padding: 0.5rem 1rem;
+    color: white;
+    margin-right: 0;
+    background: #000;
+}
+
+.site-header nav li:hover > a,
+.site-header nav a:hover,
+ .site-header nav a:focus {
+    border-color: #F00;
+    background-color: #F00;
+    color: #FFF;
+    outline: none;
+}
+
+/* Header & Footer */
+
+.site-header {
+    border-bottom: 2px solid #333;
+    padding-bottom: 1rem;
+    margin-bottom: 2rem;
+}
+
+.site-header a {
+    text-decoration: none;
+    color: #000;
+}
+
+.site-footer {
+    border-top: 2px solid #333;
+    padding-top: 1rem;
+    margin-top: 2rem;
+}
+
+/* Post */
+
+.post .image {
+    background: yellow;
+    /* padding: 1em;
+    height: auto; */
+    overflow: hidden;
+    position: relative;
+    border-radius: 1rem;
+}
+
+.post .image:before {
+    display: block;
+    content: '';
+    padding-top: 66.9%;
+    background: green;
+}
+
+article.post section.image img {
+    display: block;
+    /* display: none; */
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* .site-content{
+    display: inline-block;
+    max-width: 100%;
+}
+.site-content>section {
+    width: 59.5%;
+    border: 0.1em solid red;
+}
+.site-content>p {
+    width: 20%;
+    border: 0.1em solid blue;
+} */

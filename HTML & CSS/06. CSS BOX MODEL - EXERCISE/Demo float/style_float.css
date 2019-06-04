@@ -1,0 +1,45 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 2rem;
+    margin: 0;
+}
+
+.container {
+    background: red;
+    padding: 2rem;
+}
+
+.box {
+    width: 33.3333333333%;
+    height: 250px;
+    border: 2px solid black;
+    margin-bottom: 1rem;
+    float: left;
+    padding: 1rem;
+    
+}
+
+.container:after {
+    display: block;
+    content: '';
+    clear: both;
+}
+article section{
+    background: green;
+    
+}
+
+/* article div{
+   
+    float: left;
+} */
+
+/* article section:after{
+    display: block;
+    content: '';
+    clear: both;
+
+} */
