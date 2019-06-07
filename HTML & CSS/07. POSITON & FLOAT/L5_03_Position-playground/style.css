@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrap {
+    max-width: 100%;
+    height: auto;
+    /* margin: auto auto; */
+    /* padding: 2rem; */
+}
+
+.viewport {
+    display: block;
+    height: 50%;
+    /* border: 1px solid #f00; */
+}
+
+section.card {
+    /* border: 2px solid #000; */
+    overflow: hidden;
+    position: absolute;
+    position: relative;
+}
+
+.viewport .first:before {
+    display: block;
+    content: '';
+    padding-top: 50%;
+    background-image: linear-gradient(to right, #185a9d, #007ab4, #0098ba, #00b4b2, #42cda1);
+}
+
+.viewport .second:before {
+    display: block;
+    content: '';
+    padding-top: 50%;
+    background-image: linear-gradient(to right, #a83278, #c53764, #d5494b, #da6431, #d28212);
+}
+
+section.card img {
+    padding: 0 35%;
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+
+.viewport .first:after {
+    display: block;
+    content: '\f0c1';
+    font-family:"Font Awesome 5 Pro";
+    font-weight: 900; 
+    position: absolute;
+    top: 65%;
+    left: 62%;
+    /* transform: translate(-50%, -50%); */
+    color: #fff;
+}
+
+.viewport .second:after {
+    display: block;
+    content: "\f005";
+    font-family:"Font Awesome 5 Pro";
+    font-weight: 900; 
+    color: #fff;
+    position: absolute;
+    top: 90%;
+    left: 62%;
+    /* content: '\f0c1'; */
+}
