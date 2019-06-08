@@ -1,27 +1,34 @@
-* {
+*,*:after, *:before {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
 .wrap {
-    max-width: 100%;
-    height: auto;
+    /* position: relative; */
+    /* max-width: 100%;
+    height: 50%; */
     /* margin: auto auto; */
     /* padding: 2rem; */
+   
 }
 
 .viewport {
-    display: block;
-    height: 50%;
+    max-width: 100%;
+    height: 50vh;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
     /* border: 1px solid #f00; */
 }
 
 section.card {
+    display: block;
+    width: 100%;
+   height: auto;
     /* border: 2px solid #000; */
     overflow: hidden;
     position: absolute;
-    position: relative;
 }
 
 .viewport .first:before {
@@ -50,26 +57,24 @@ section.card img {
     transform: translate(-50%, -50%)
 }
 
-.viewport .first:after {
+.viewport .first:after ,
+.viewport .second:after {
     display: block;
-    content: '\f0c1';
+    content: '';
     font-family:"Font Awesome 5 Pro";
     font-weight: 900; 
     position: absolute;
+    color: #fff; 
+}
+
+.viewport .first:after {
+    content: '\f0c1';
     top: 65%;
-    left: 62%;
-    /* transform: translate(-50%, -50%); */
-    color: #fff;
+    left: 61%;
 }
 
 .viewport .second:after {
-    display: block;
     content: "\f005";
-    font-family:"Font Awesome 5 Pro";
-    font-weight: 900; 
-    color: #fff;
-    position: absolute;
     top: 90%;
     left: 62%;
-    /* content: '\f0c1'; */
 }

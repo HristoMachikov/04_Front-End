@@ -1,0 +1,124 @@
+*, *:before, *:after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 70%;
+    margin: 0 auto;
+    padding: 1rem;
+    background: rgb(238, 238, 238);
+}
+
+html {
+    font-size: 16px;
+    font-family: Helvetica, sans-serif;
+    line-height: 1.5;
+}
+
+p, ul, ol {
+    padding-bottom: 1rem;
+}
+
+article {
+    padding-bottom: 2rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: Georgia, serif;
+    font-size: 1em;
+    line-height: 1.2;
+    padding-bottom: 0.3em;
+}
+
+h1 {
+    font-size: 2.4rem;
+}
+
+h2 {
+    font-size: 2.0rem;
+}
+
+h3 {
+    font-size: 1.6rem;
+}
+
+h4 {
+    font-size: 1.45rem;
+}
+
+h5 {
+    font-size: 1.2rem;
+}
+
+h6 {
+    font-size: 1rem;
+}
+.card {
+    max-width:80%;
+    margin: 0 auto;
+    border-radius: 0.8rem;
+    /* border: 1px solid #000; */
+    overflow: hidden;
+}
+
+.card:after{
+    display: block;
+    content: "";
+    border-radius: 1rem;
+}
+
+.main-image {
+display: block;
+background: #f00;
+/* border: 1px solid #000; */
+overflow: hidden;
+position: relative;
+}
+
+.main-image:before {
+display: block;
+content: "";
+padding-top: 64%;
+background: #00f;
+
+}
+
+img{
+    display: block;
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top:50%;
+    left:50%;
+    /* padding: 1rem; */
+    transform: translate(-50%, -50%);
+    /* display: none; */
+}
+
+button{
+    display: inline-block;
+    float: right;
+    background: rgb(0, 153, 0);
+    border: none;
+    padding: 1rem;
+    border-radius: 0.2rem;
+    margin: 0 1.5rem 1.5rem 0;
+}
+.main-content{
+background: rgb(255, 255, 255);
+/* overflow: hidden; */
+}
+
+.main-content:after{
+    display: block;
+    content: "";
+    clear: both;
+}
+
+/* .cleaner{
+    clear: both;
+} */
+
+ 
