@@ -1,0 +1,69 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+ul {
+    padding: 1rem;
+} 
+
+ul li {
+    display: block;
+}
+
+ul li a {
+    display: inline-block;
+    padding: 0.7rem;
+    margin-right: 1rem;
+    border-radius: 50%;
+    text-decoration: none;
+    background: #eee;
+}
+
+ul li a:before {
+    display: block;
+    content: '';
+    font-family: "Font Awesome 5 Brands";
+    font-weight: 400;
+    color: black;
+}
+
+ul li a:nth-child(1):before {
+    content: '\f082';
+}
+
+ul li a:nth-child(1):hover:before {
+    color: rgb(60,90,153);
+}
+
+ul li a:nth-child(2):before {
+    content: '\f099';
+}
+
+ul li a:nth-child(2):hover:before {
+    color: rgb(56,161,243);
+}
+
+ul li a:nth-child(3):before {
+    content: '\f2b3';
+}
+
+ul li a:nth-child(3):hover:before {
+    color: rgb(221,75,57);
+}
+
+ul li a:nth-child(4):before {
+    content: '\f08c';
+}
+
+ul li a:nth-child(4):hover:before {
+    color: rgb(0,119,181);
+}
+
+ul li a:nth-child(5):before {
+    content: '\f16d';
+}
+
+ul li a:nth-child(5):hover:before {
+    color: rgb(64,93,230);
+}
