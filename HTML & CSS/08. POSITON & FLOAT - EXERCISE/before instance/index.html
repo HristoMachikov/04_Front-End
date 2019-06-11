@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS BOX MODEL - EXERSICE</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="site">
+        <header class="site-header">
+            <h1 class="site-title">
+                <a href="#">Blog title</a>
+            </h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Fun</a></li>
+                    <li><a href="#">About</a>
+                        <ul>
+                            <li><a href="#">Team</a></li>
+                            <li class="has-sub-menu"><a href="#">Projects</a>
+                                <ul>
+                                    <li><a href="#">Project 1</a></li>
+                                    <li><a href="#">Project 2</a></li>
+                                    <li class="has-sub-menu"><a href="#">Project 3</a>
+                                        <ul>
+                                            <li><a href="#">Project 1</a></li>
+                                            <li><a href="#">Project 2</a></li>
+                                            <li><a href="#">Project 3</a></li>
+                                            <li><a href="#">Project 4</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">Project 4</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">News</a></li>
+                            <li><a href="#">Partners</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Contacts</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main class="site-content">
+            <section class="main-content">
+                <article class="post" id="first-article">
+                    <section class="image">
+                        <img
+                            src="https://images.unsplash.com/photo-1539186607709-a7536abcebeb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80">
+                    </section>
+                    <header>
+                        <h3>Article title goes here</h3>
+                        <p class="meta">Published by <a href="#">Koko</a> on <time>12 of January 2019</time></p>
+                    </header>
+
+                    <section>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti magnam placeat nisi omnis
+                            repudiandae
+                            eum saepe sequi perspiciatis quibusdam repellat autem eos pariatur consequatur, cumque
+                            ratione
+                            illum
+                            neque, delectus architecto?</p>
+                        <p>Explicabo, odit dolore in, dolor, non deserunt molestias dolorum at laborum similique
+                            exercitationem
+                            quasi ex illo sed doloribus impedit facilis ad cumque modi. Iusto laudantium excepturi
+                            ipsam,
+                            eum enim
+                            fugit?</p>
+                    </section>
+                    <footer>
+                        <p>Tags: <a href="">something</a>, <a href="">else</a>, <a href="">a lot</a></p>
+                    </footer>
+                </article>
+                <article class="post">
+                    <section class="image">
+                        <img
+                            src="https://images.unsplash.com/photo-1539122796890-c7f94fa5438a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=80">
+                    </section>
+                    <header>
+                        <h3>Article title goes here</h3>
+                        <p class="meta">Published by <a href="#">Koko</a> on <time>12 of January 2019</time></p>
+                    </header>
+
+                    <section>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti magnam placeat nisi omnis
+                            repudiandae
+                            eum saepe sequi perspiciatis quibusdam repellat autem eos pariatur consequatur, cumque
+                            ratione
+                            illum
+                            neque, delectus architecto?</p>
+                        <p>Explicabo, odit dolore in, dolor, non deserunt molestias dolorum at laborum similique
+                            exercitationem
+                            quasi ex illo sed doloribus impedit facilis ad cumque modi. Iusto laudantium excepturi
+                            ipsam,
+                            eum enim
+                            fugit?</p>
+                    </section>
+                    <footer>
+                        <p>Tags: <a href="">something</a>, <a href="">else</a>, <a href="">a lot</a></p>
+                    </footer>
+                </article>
+                <article class="post">
+                    <section class="image">
+                        <img
+                            src="https://images.unsplash.com/photo-1540379803262-3e6f0a922224?ixlib=rb-1.2.1&auto=format&fit=crop&w=1057&q=80">
+                    </section>
+                    <header>
+                        <h3>Article title goes here</h3>
+                        <p class="meta">Published by <a href="#">Koko</a> on <time>12 of January 2019</time></p>
+                    </header>
+
+                    <section>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti magnam placeat nisi omnis
+                            repudiandae
+                            eum saepe sequi perspiciatis quibusdam repellat autem eos pariatur consequatur, cumque
+                            ratione
+                            illum
+                            neque, delectus architecto?</p>
+                        <p>Explicabo, odit dolore in, dolor, non deserunt molestias dolorum at laborum similique
+                            exercitationem
+                            quasi ex illo sed doloribus impedit facilis ad cumque modi. Iusto laudantium excepturi
+                            ipsam,
+                            eum enim
+                            fugit?</p>
+                    </section>
+                    <footer>
+                        <p>Tags: <a href="#first-article">something</a>, <a href="#first-article">else</a>, <a
+                                href="#first-article">a lot</a></p>
+                    </footer>
+                </article>
+            </section>
+            <aside class="main-sidebar">
+                <section>
+                    <header>
+                        <h4>Search</h4>
+                    </header>
+                    <input type="search">
+                </section>
+                <section>
+                    <header>
+                        <h4>Latest posts</h4>
+                    </header>
+                    <ul>
+                        <li>Lorem ipsum dolor sit amet</li>
+                        <li>Velit, vero fugit! Laudantium</li>
+                        <li>Eligendi labore iusto excepturi ligendi labore iusto excepturi</li>
+                        <li>Animi nesciunt placeat qui</li>
+                    </ul>
+                </section>
+                <section>
+                    <header>
+                        <ul>
+                            <li>Janyary 2019</li>
+                            <li>February 2019</li>
+                        </ul>
+                    </header>
+                </section>
+            </aside>
+
+        </main>
+
+        <footer class="site-footer">
+            <p>Blog Title 1990 - 2019 &copy; All rights reserved</p>
+        </footer>
+    </div>
+</body>
+
+</html>
