@@ -8,6 +8,30 @@ article.post img {
     background: #fff;
 }
 
+article.post section.content img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    border: 0.5rem solid black;
+    padding: 1rem;
+    background: #fff;
+}
+
+article.post section.content img[class*="aligne-"] {
+    width: 40%;
+}
+
+article.post section.content img.aligne-right {
+    float: right;
+    margin: 0 0 1rem 1.5rem;
+}
+
+article.post section.content img.aligne-left {
+    float: left;
+    margin: 0 1.5rem 1rem 0;
+}
+
 article.post section.image {
     overflow: hidden;
     border-radius: 0.5rem;

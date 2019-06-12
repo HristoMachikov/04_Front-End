@@ -1,103 +1,90 @@
 *, *:after, *:before {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: inherit;
 }
 
-.wrap {
-    /* position: relative; */
-    /* max-width: 100%;
-    height: 50%; */
-    /* margin: auto auto; */
-    /* padding: 2rem; */
+html {
+    box-sizing: border-box;
 }
 
 .viewport {
     width: 100%;
     height: 50vh;
-    margin: 0 auto;
     position: relative;
-    overflow: hidden;
-    /* border: 1px solid #f00; */
 }
 
-.card:nth-child(1) {
+.viewport:nth-child(1) {
     background-image: linear-gradient(to right, #185a9d, #007ab4, #0098ba, #00b4b2, #42cda1);
 }
 
-.card:nth-child(2) {
+.viewport:nth-child(2) {
     background-image: linear-gradient(to right, #a83278, #c53764, #d5494b, #da6431, #d28212);
 }
 
-section.card .image {
-    display: block;
-    width: 100%;
-    height: auto; 
-    /* border: 2px solid #000; */
-    /* overflow: hidden; */
-    position: absolute;
-}
-
-section.card .image .portrait {
-    display: block;
-    width: auto;
-    height: 100%; 
-    /* border: 2px solid #000; */
-    overflow: hidden;
-    position: absolute;
-}
-
-.viewport .image:before {
-    display: block;
-    content: '';
-    padding-top: 50%;
-}
-
-.viewport .image .portrait:before {
-    display: block;
-    content: '';
-    padding-top: 50%;
-}
-
-section.card .image  {
-    /* padding: 0 35%; */
-    display: block;
-   
-    margin: 0 auto;
+.viewport .card {
+    width: 30%;
+    height: auto;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%)
+    transform: translate(-50%, -50%);
 }
-section.card .image img {
-    /* padding: 0 35%; */
+
+.viewport .card .image  {
+    overflow: hidden;
+    border-radius: 0.3rem;
+}
+
+.viewport .card:before {
+    display: block;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 0.3rem;
+    box-shadow: inset 0px 0px 40px 20px rgba(0,0,0,0.75);
+}
+
+.viewport .card .image img {
     display: block;
     width: 100%;
     height: auto;
-    margin: 0 auto;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%)
+    z-index: -1;
 }
 
-.viewport .image:after, .viewport .image:after .portrait {
+.viewport.portrait .card {
+    width: auto;
+    height: 45vh;
+}
+
+.viewport.portrait .card .image  {
+    width: auto;
+    height: 100%;
+}
+
+.viewport.portrait .card .image img {
+    width: auto;
+    height: 100%;
+}
+
+.viewport .card:after {
     display: block;
     content: '';
     font-family: "Font Awesome 5 Pro";
     font-weight: 900;
     position: absolute;
+    bottom: 0.5rem;
+    right: 0.5rem;
     color: #fff;
 }
 
-.viewport .image:after {
+.viewport .card:after {
     content: '\f0c1';
-    top: 65%;
-    left: 61%;
 }
 
-.viewport .image .portrait:after {
+.viewport.portrait .card:after {
     content: "\f005";
-    top: 90%;
-    left: 62%;
 }

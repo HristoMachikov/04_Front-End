@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>CSS BOX MODEL - EXERSICE</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="site.css">
 </head>
 
 <body>
@@ -18,7 +18,7 @@
             <nav>
                 <ul>
                     <li><a href="#">Home</a></li>
-                    <li><a href="#">Fun</a></li>
+                    <li><a href="index-post.html">Post</a></li>
                     <li><a href="#">About</a>
                         <ul>
                             <li><a href="#">Team</a></li>
@@ -44,6 +44,14 @@
                     <li><a href="#">Contacts</a></li>
                 </ul>
             </nav>
+
+            <section class="search"> 
+                <header>
+                    <h4>Search</h4>
+                </header>
+                <input type="search">
+            </section>
+
         </header>
 
         <main class="site-content">
@@ -58,13 +66,18 @@
                         <p class="meta">Published by <a href="#">Koko</a> on <time>12 of January 2019</time></p>
                     </header>
 
-                    <section>
+                    <section class="content">
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti magnam placeat nisi omnis
                             repudiandae
                             eum saepe sequi perspiciatis quibusdam repellat autem eos pariatur consequatur, cumque
                             ratione
                             illum
                             neque, delectus architecto?</p>
+                        
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis quae cum provident inventore, pariatur nulla odio eum aliquid? Repellendus enim qui placeat consectetur sapiente cum ipsa laboriosam libero est odit.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, doloribus ullam. Officia quibusdam tempora iste possimus aliquam accusamus illum quasi veritatis ab voluptates labore assumenda deleniti, libero, saepe quia consequatur.</p>
+                        <p><img class="aligne-left" src="https://images.unsplash.com/photo-1539186607709-a7536abcebeb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, doloribus ullam. Officia quibusdam tempora iste possimus aliquam accusamus illum quasi veritatis ab voluptates labore assumenda deleniti, libero, saepe quia consequatur.</p>
+                        <p><img class="aligne-right" src="https://images.unsplash.com/photo-1539186607709-a7536abcebeb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, doloribus ullam. Officia quibusdam tempora iste possimus aliquam accusamus illum quasi veritatis ab voluptates labore assumenda deleniti, libero, saepe quia consequatur.</p>
                         <p>Explicabo, odit dolore in, dolor, non deserunt molestias dolorum at laborum similique
                             exercitationem
                             quasi ex illo sed doloribus impedit facilis ad cumque modi. Iusto laudantium excepturi
@@ -105,7 +118,7 @@
                     </footer>
                 </article>
                 <article class="post">
-                    <section class="image">
+                    <section class="content">
                         <img
                             src="https://images.unsplash.com/photo-1540379803262-3e6f0a922224?ixlib=rb-1.2.1&auto=format&fit=crop&w=1057&q=80">
                     </section>
@@ -135,12 +148,6 @@
                 </article>
             </section>
             <aside class="main-sidebar">
-                <section>
-                    <header>
-                        <h4>Search</h4>
-                    </header>
-                    <input type="search">
-                </section>
                 <section>
                     <header>
                         <h4>Latest posts</h4>

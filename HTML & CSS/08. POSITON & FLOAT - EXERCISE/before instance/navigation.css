@@ -1,6 +1,37 @@
 .site-header nav {
-    background: black;
     /* overflow: hidden; */
+}
+
+.site-header nav ul{
+    background: rgba(0, 0, 0, 0.5);
+    /* overflow: hidden; */
+}
+
+.site-header {
+    position: relative;
+}
+
+.site-header .search {
+position: absolute;
+top: 0;
+right: 0;
+}
+
+.search {
+    overflow: hidden;
+}
+
+.search header {
+float: left;
+padding-right: 1rem;
+}
+
+.search input {
+float: left;
+padding: 0.5rem 1rem;
+background: #FFF;
+border: 1px solid #DDD;
+border-radius: 0.5rem;
 }
 
 .site-header nav ul:after {
@@ -15,7 +46,7 @@
     display: block;
     color: #fff;
     list-style: none;
-    background-color: #000;
+    /* background-color: #000; */
     position: relative;
     padding: 0.2em 0.5em;
 }
@@ -28,12 +59,11 @@
     /* text-align: center; */
 }
 
-.site-header nav li:hover>a, .site-header nav li a:hover, .site-header nav li a:focus {
-    /* border-color: #000; */
-    background-color: #f00;
-    color: #FFF;
-    /* outline: none; */
-    border-radius: 0.5em;
+.site-header nav li:hover > a, 
+.site-header nav li a:hover, 
+.site-header nav li a:focus {
+     outline: none;
+     border-radius: 0.5em;
 }
 
 .site-header nav>ul>li {

@@ -1,5 +1,6 @@
 body {
     padding: 2rem;
+    /* padding-top: 10rem; */
 }
 
 .site {
@@ -7,22 +8,31 @@ body {
     margin: 0 auto;
 }
 
+.site-header {
+    /* position: fixed;
+    width: 100%;
+    top: 0; right: 0; left: 0;
+    background: #FFF;
+    z-index: 100;
+    box-shadow: 0 2px 20px #000; */
+
+    padding-bottom: 1rem;
+    margin-bottom: 2rem;
+}
+
 .main-content, .main-sidebar {
     display: inline-block;
 }
 
 .site-content {
-    /* border: 1px solid #000; */
     width: 100%;
 }
 
 .main-content {
-    /* border: 1px solid red; */
     width: 70%;
 }
 
 .main-sidebar {
-    /* border: 1px solid blue; */
     width: 29.5%;
     vertical-align: top;
     padding-left: 1rem;
