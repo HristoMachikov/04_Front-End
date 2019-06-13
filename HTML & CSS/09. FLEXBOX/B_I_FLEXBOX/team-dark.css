@@ -1,0 +1,31 @@
+body {
+    background: #369;
+}
+
+.site-header {
+    border-bottom: 2px solid #EEE;
+}
+
+a {
+    color: #FFF;
+}
+
+.site-header a {
+    text-decoration: none;
+    color: #FFF;
+}
+
+.site-footer {
+    border-top: 2px solid #EEE;
+    padding-top: 1rem;
+    margin-top: 2rem;
+}
+
+/* Navigatiom */
+
+.site-header nav li:hover > a, 
+.site-header nav li a:hover, 
+.site-header nav li a:focus {
+    background-color: #FFF;
+    color: #000;
+}
