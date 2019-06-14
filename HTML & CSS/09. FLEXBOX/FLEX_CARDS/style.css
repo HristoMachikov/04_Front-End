@@ -1,19 +1,62 @@
 @import url("typography.css");
+body {
+    padding: 4rem;
+}
 
 .card-list {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .card {
+    display: flex;
+    flex-direction: column;
     flex: 0 0 30%;
     border: 1px solid #EEE;
     border-radius: 0.5rem;
+    overflow: hidden;
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.5);
+    margin-bottom: 5%;
+}
+
+.card-media {}
+
+.image-main {
+    background: #EEE;
+    overflow: hidden;
+    position: relative;
+}
+
+.image-main img {
+    max-width: 100%;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.image-main:after {
+    display: block;
+    content: "";
+    padding-top: 56.25%;
 }
 
 .card-content {
-    padding: 1rem;
-    /* border-width: 1px solid #EEE; */
+    padding: 1rem 1.2rem;
+    border: solid #CCC;
+    border-width: 1px 0;
+    flex-grow: 1;
+}
+
+.card-content .category {
+    color: orange;
+    text-decoration: none;
+}
+
+.card-content-inner p:last-child {
+    padding: 0;
 }
 
 .card-footer {
@@ -28,4 +71,9 @@
     color: #000;
     text-decoration: none;
     text-align: center;
+}
+.card-list:after {
+    display: block;
+    content: "";
+    flex: 0 0 30%;
 }
