@@ -33,3 +33,9 @@ font-weight: 900;
 mycolor.space/gradient 
 bem - конвенция за класове  
 block-element-modifier
+
+--------------------
+margin - част от спецификацията на flexbox
+align-content работи при сетнат flex-wrap:wrap;
+css columns - 11 задача
+width и flex-base не се комбинират за един елемент

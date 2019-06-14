@@ -1,0 +1,81 @@
+* {
+    box-sizing: inherit;
+}
+
+body {
+    padding: 2rem;
+}
+
+html {
+    box-sizing: border-box;
+    
+}
+
+.site {
+    max-width: 60rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.site-header, .site-footer {
+    background: #000;
+    color: #FFF;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    border-radius: 0.5em;
+    margin-bottom: 2rem;
+}
+
+.site-header h1 {
+    color: #FFF;
+}
+
+.site-header nav {
+    display: flex;
+    margin-left: auto;
+}
+
+.site-header nav ul {
+    display: flex;
+}
+
+.site-header nav li {
+    display: flex;
+    text-decoration: none;
+}
+
+.site-header nav a {
+    display: flex;
+    align-items: center;
+}
+
+.site-header nav a:hover {
+    background: #f00;
+}
+
+.site-header h1 {
+    font-size: 1.5rem;
+}
+
+.site-content {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.site-content main {
+    flex: 1 0 40rem;
+    padding: 1rem;
+}
+
+.site-content aside {
+    flex: 1 0 20rem;
+    padding: 1rem;
+}
+
+.site-footer {
+    padding: 1rem;
+    margin-top: 1rem;
+}
