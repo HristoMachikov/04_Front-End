@@ -1,0 +1,44 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(238, 238, 238);
+}
+
+.cards-layout {
+    width: 80vw;
+    margin: 0 auto;
+    height: 100vh;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+    /* background: #f00; */
+
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 30%;
+    border: 1px solid #000;
+    margin-bottom: 5%;
+
+}
+
+.card-content {
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+    border-bottom: 1px  solid #CCC;
+    flex-grow: 1;
+}
