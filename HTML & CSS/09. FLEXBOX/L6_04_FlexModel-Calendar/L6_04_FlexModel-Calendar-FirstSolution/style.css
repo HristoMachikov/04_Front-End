@@ -1,0 +1,44 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+span {
+    border: 1px solid black;
+}
+
+.container {
+    display: flex;
+    outline: 1px solid red;
+    max-width: 65vw;
+    align-items: center;
+}
+
+.container .week {
+    display: flex;
+    flex-wrap: wrap;
+    min-width: 50vw;
+}
+
+.container .notes {
+    display: flex;
+    flex-direction: column;
+    min-width: 15vw;
+
+}
+
+
+
+.container .week span {
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+.container .week span:nth-child(1) {
+    flex-grow: 5;
+}

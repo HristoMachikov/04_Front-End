@@ -39,3 +39,9 @@ margin - част от спецификацията на flexbox
 align-content работи при сетнат flex-wrap:wrap;
 css columns - 11 задача
 width и flex-base не се комбинират за един елемент
+
+--------------------------
+.item + .item {margin-left: 0.5em} - item който има от ляво един item
+.item:not(:first-child) {margin-left: 0.5em}
+flex-basis: 100%;
+list-style (short hand property) positon / style

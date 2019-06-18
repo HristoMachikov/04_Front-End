@@ -12,19 +12,27 @@ body {
     background: rgb(238, 238, 238);
 }
 
+.container {
+    display: inline-block;
+    break-inside: avoid;
+}
+
+.container .cards-layout {
+    column-count: 3;
+    column-gap: 1em
+}
+
 .cards-layout {
     width: 80vw;
     margin: 0 auto;
-    height: 100vh;
+    /* height: 100vh; */
 }
 
 .flex {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    
     /* background: #f00; */
-
 }
 
 .card {
@@ -33,12 +41,12 @@ body {
     flex: 0 0 30%;
     border: 1px solid #000;
     margin-bottom: 5%;
-
+    align-items: center;
 }
 
 .card-content {
     padding-bottom: 1rem;
     margin-bottom: 1rem;
-    border-bottom: 1px  solid #CCC;
+    border-bottom: 1px solid #CCC;
     flex-grow: 1;
 }
