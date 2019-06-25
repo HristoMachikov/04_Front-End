@@ -1,0 +1,93 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font: 14px/1.5 Verdana, Geneva, Tahoma, sans-serif;
+    /* font-family: Verdana, Geneva, Tahoma, sans-serif */
+}
+
+body {
+    padding: 2rem 4rem;
+}
+
+.main-form {
+    max-width: 50%;
+    height: auto;
+    margin: 0 auto;
+    position: relative;
+}
+
+.main-form fieldset {
+    padding: 1rem;
+    background: #EEE;
+}
+
+.main-form fieldset legend {
+    padding: 0.5rem;
+    padding-right: 5rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateY(-50%);
+    z-index: 2;
+    background: #EEE;
+}
+.main-form fieldset legend, .main-form fieldset {
+    border:1px solid #AAA;
+    border-radius: 0.5rem;
+}
+
+.main-form label {
+    font-weight: bold;
+}
+
+.main-form input[type=text], .main-form input[type=password] {
+    padding: 0.5rem;
+    border-radius: 0.3rem;
+    border: 1px solid #CCC;
+}
+
+.main-form .username, .main-form .password {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    margin-top: 1rem;
+}
+
+.main-form .username input, .main-form .password input {
+    flex: 1 0 100%;
+    padding-left: 2rem;
+}
+
+.main-form .username::before, .main-form .password::before {
+    display: block;
+    content: '';
+    font-family: "Font Awesome 5 Pro";
+    font-weight: 900;
+    color: black;
+    position: absolute;
+    top: 1.8rem;
+    left: 0.5rem;
+}
+
+.main-form .username::before {
+    content: '\f007';
+}
+
+.main-form .password::before {
+    content: '\f084';
+}
+
+.main-form .username input:hover, .main-form .password input:hover {
+    border: 1px solid green;
+    color: green;
+}
+
+.main-form input[type=submit] {
+    padding: 0.25em;
+    margin: 1rem 0;
+}
