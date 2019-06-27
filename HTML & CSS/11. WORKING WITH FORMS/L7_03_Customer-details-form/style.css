@@ -1,0 +1,67 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-family: Montserrat, sans-serif;
+    font-size: 18px;
+    line-height: 1.2;
+}
+
+form {
+    width: 50%;
+    height: auto;
+    background: rgb(173, 216, 230);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 2em;
+    padding-right: 8em;
+}
+
+form h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: normal;
+    flex-basis: 100%;
+    text-align: center;
+    flex-grow: 1;
+    padding-bottom: 1em;
+}
+
+form>p {
+    display: flex;
+    padding-bottom: 1em;
+    flex-grow: 1;
+}
+
+form p label, form p span {
+    flex-basis: 31%;
+    flex-grow: 1;
+}
+
+form p input, form p select {
+    flex-basis: 69%;
+    flex-grow: 1;
+    padding: 0.5em;
+}
+
+form button {
+    background: rgb(59, 89, 152);
+    color: #FFF;
+    /* flex-grow: 1; */
+    width: 20%;
+    margin-left: auto;
+    margin-right: 25%;
+    flex-basis: 10%;
+    padding: 1em;
+    border: none;
+    outline: none;
+    border-radius: 0.5em;
+}
+
+form>p p {
+    display: flex;
+}

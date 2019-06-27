@@ -1,0 +1,98 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-family: Montserrat, sans-serif;
+    font-size: 18px;
+    line-height: 1.2; 
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(to right top, #0dcfdf, #00c3ff, #00adff, #7184ff, #f107fd);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    width: 60%;
+    height: 80%;
+    background: #FFF;
+    display: flex;
+    flex-wrap: wrap;
+    /* flex-direction: column; 
+    justify-content: space-between;
+    align-items: center;
+    align-content: center; */
+    justify-content: center;
+    align-items: center;
+    align-content: space-between;
+    padding: 4em;
+    border-radius: 1rem;
+}
+
+form h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: normal;
+    flex-basis: 100%;
+    text-align: center;
+}
+
+form p {
+    flex-basis: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+form p input {
+    flex-grow: 1;
+    flex-basis: 100%;
+    padding: 1em;
+}
+
+form p label {
+    flex-basis: 100%;
+    padding-bottom: 0.5em;
+}
+
+form .btn {
+    text-align: center;
+    border-radius: 0.5em;
+    padding: 1em;
+    flex-basis: 45%;
+}
+
+form .facebook-btn i, form .google-btn i {
+    padding: 0 0.5em;
+}
+
+form .singIn-btn {
+    background: #000;
+    color: #FFF;
+    flex-basis: 100%;
+}
+
+form .facebook-btn {
+    background: rgb(59, 89, 152);
+    color: #FFF;
+}
+
+form .google-btn {
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
+}
+
+form input:focus {
+    border-color: #f107fd;
+    outline: none;
+}
+
+form .btn:hover {
+    background: linear-gradient(to right top, #0dcfdf, #00c3ff, #00adff, #7184ff, #f107fd);
+}

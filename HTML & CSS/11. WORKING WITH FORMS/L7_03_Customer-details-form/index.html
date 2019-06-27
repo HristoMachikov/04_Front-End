@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Customer Details Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <form action="#" method="get">
+        <h1>Customer Details</h1>
+        <p>
+            <label for="firstName">First Name</label>
+            <input type="text" id="firstName" placeholder="George">
+        </p>
+        <p>
+            <label for="lastNmae">Last Name</label>
+            <input type="text" id="lastName" placeholder="Devis">
+        </p>
+        <p>
+            <span>Gender</span>
+            <p>
+                <input type="radio" id="male">
+                <label for="male">Male</label>
+            </p>
+            <p>
+                <input type="radio" id="famale">
+                <label for="famale">Famale</label>
+            </p>
+        </p>
+        <p>
+            <label for="email">Email</label>
+            <input type="text" id="email" placeholder="your@email.com">
+        </p>
+        <p>
+            <label for="phone">Phone</label>
+            <input type="text" id="phone" placeholder="+359885236225">
+        </p>
+        <p>
+            <label for="town">Town</label>
+            <select name="town" id="town">
+                <option value="Varna">Varna</option>
+                <option value="Burgas">Burgas</option>
+                <option value="Plovdiv">Plovdiv</option>
+                <option value="Sofia">Sofia</option>
+            </select>
+        </p>
+        <p>
+            <label for="age">Age</label>
+            <input type="number" id="age">
+        </p>
+        <p>
+            <label for="language">Language</label>
+            <input type="text" id="language">
+        </p>
+        <p>
+            <label for="message">Message</label>
+            <textarea type="" id="message" placeholder="More information..." rows="5" cols="35"></textarea>
+        </p>
+        <p class="checkbox">
+                <input type="checkbox" id="terms">  
+                <label for="terms">I agree the Terms and Conditions</label>
+        </p>
+        <button>Send</button>
+    </form>
+</body>
+
+</html>
