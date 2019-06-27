@@ -11,40 +11,52 @@ html {
     line-height: 1.2;
 }
 
+body {
+    max-width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    padding: 1em 0;
+}
+
 form {
     width: 50%;
     height: auto;
     background: rgb(173, 216, 230);
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
+    justify-content: space-between;
     padding: 2em;
     padding-right: 8em;
+    border-radius: 1em;
 }
 
 form h1 {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: normal;
     flex-basis: 100%;
-    text-align: center;
+    /* text-align: center; */
     flex-grow: 1;
     padding-bottom: 1em;
+    margin-left: auto;
 }
 
 form>p {
     display: flex;
     padding-bottom: 1em;
-    flex-grow: 1;
+    /* flex-grow: 1; */
+    align-items: center;
 }
 
 form p label, form p span {
     flex-basis: 31%;
-    flex-grow: 1;
+    /* flex-grow: 1; */
 }
 
-form p input, form p select {
+form p input, form p select, form p textarea {
     flex-basis: 69%;
-    flex-grow: 1;
+    /* flex-grow: 1; */
     padding: 0.5em;
 }
 
@@ -64,4 +76,30 @@ form button {
 
 form>p p {
     display: flex;
+}
+
+form .gender {
+    display: flex;
+    padding-bottom: 1em;
+}
+
+form .gender p {
+    flex-grow: 1;
+}
+
+form .gender p input, form .gender p label {
+    flex-basis: auto;
+}
+
+form .gender span {
+    flex-basis: 31%;
+}
+
+form .checkbox {
+    align-items: center;
+}
+
+form .checkbox input, form .checkbox label {
+    flex-basis: auto;
+    flex-grow: 0;
 }
