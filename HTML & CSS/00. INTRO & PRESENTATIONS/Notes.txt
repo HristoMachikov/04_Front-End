@@ -45,3 +45,13 @@ width и flex-base не се комбинират за един елемент
 .item:not(:first-child) {margin-left: 0.5em}
 flex-basis: 100%;
 list-style (short hand property) positon / style
+list-style: none outside
+------------------------------
+
+На display-inline елемент (а-таг) не може да се слага padding
+poiter-events: none;
+
+www.uifaces.co
+Merriweather->font-family
+Fira Sans
+letter-spacing: -0.1em;

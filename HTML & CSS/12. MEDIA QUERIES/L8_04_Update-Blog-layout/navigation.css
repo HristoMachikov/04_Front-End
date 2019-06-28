@@ -1,0 +1,107 @@
+/* ---Header--- */
+.site-header {
+    flex-grow: 1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #000;
+    padding: 1rem 0;
+}
+
+.site-header .site-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+     padding-bottom: 0;
+    
+}
+
+.site-header .site-nav {
+    /* margin-left: auto; */
+}
+
+.site-nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    background: #FFF;
+    padding: 0.5em;
+}
+
+.site-nav ul li {
+    list-style: none;
+    display: flex;
+}
+
+.site-nav ul li a {
+    text-decoration: none;
+    background: #000;
+    color: #FFF;
+    border-radius: 0.5rem;
+    padding: 0.5em 0.75em;
+}
+
+.site-nav ul li:not(:last-child) {
+    margin-right: 0.75em;
+}
+
+.toggle-nav {
+    position: absolute;
+    opacity: 0;
+    /* display: none; */
+    pointer-events: none;
+}
+
+.site-header .toggle-nav-btn {
+    display: none;
+}
+
+.site-header .toggle-nav-btn .open {
+    display: none;
+}
+
+
+/* ---MQ Header--- */
+/* Phone amd Tablet */
+
+@media (max-width: 830px) {
+    .site-header {
+        justify-content: center;
+        border-bottom: none;
+        padding: 1rem 0;
+    }
+    .site-header .toggle-nav-btn {
+        display: block;
+        /* flex: 1 0 100%; */
+        text-align: center;
+        margin: 2rem 0;
+    }
+    .site-title {
+        text-align: center;
+        flex: 1 0 100%;
+    }
+    .site-nav {
+        flex: 1 0 100%;
+    }
+    .site-nav ul {
+        border-bottom: 2px solid #000;
+        border-top: 2px solid #000;
+    }
+    .site-nav ul li {
+        flex: 1 0 100%;
+    }
+    .site-nav ul li a {
+        flex: 1 0 100%;
+    }
+    .site-nav ul li:not(:last-child) {
+        margin-bottom: 0.75em;
+    }
+    .toggle-nav:checked+.site-header .site-nav ul li {
+        display: none;
+    }
+    .toggle-nav:checked+.site-header .toggle-nav-btn .close {
+        display: none;
+    }
+    .toggle-nav:checked+.site-header .toggle-nav-btn .open {
+        display: block;
+    }
+}

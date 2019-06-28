@@ -1,0 +1,159 @@
+*, *:before, *:after {
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.2;
+    background: #DDD;
+}
+
+body {
+    padding: 3rem;
+}
+
+.site-header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #000;
+    padding: 1rem 0;
+}
+
+.site-header .site-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.site-header .site-nav {
+    /* margin-left: auto; */
+}
+
+.site-nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    background: #FFF;
+    padding: 0.5em;
+}
+
+.site-nav ul li {
+    list-style: none;
+    display: flex;
+}
+
+.site-nav ul li a {
+    text-decoration: none;
+    background: #000;
+    color: #FFF;
+    border-radius: 0.5rem;
+    padding: 0.5em 0.75em;
+}
+
+.site-nav ul li:not(:last-child) {
+    margin-right: 0.75em;
+}
+
+.toggle-nav {
+    position: absolute;
+    opacity: 0;
+    /* display: none; */
+    pointer-events: none;
+}
+
+.site-header .toggle-nav-btn {
+    display: none;
+}
+
+.site-header .toggle-nav-btn .open {
+    display: none;
+}
+
+/* ---Navigation--- */
+/* Phone amd Tablet */
+
+@media (max-width: 830px) {
+    .site-header {
+        justify-content: center;
+        border-bottom: none;
+        padding: 1rem 0;
+    }
+    .site-header .toggle-nav-btn {
+        display: block;
+        /* flex: 1 0 100%; */
+        text-align: center;
+        margin: 2rem 0;
+    }
+    .site-title {
+        text-align: center;
+        flex: 1 0 100%;
+    }
+    .site-nav {
+        flex: 1 0 100%;
+    }
+    .site-nav ul {
+        border-bottom: 2px solid #000;
+        border-top: 2px solid #000;
+    }
+    .site-nav ul li {
+        flex: 1 0 100%;
+    }
+    .site-nav ul li a {
+        flex: 1 0 100%;
+    }
+    .site-nav ul li:not(:last-child) {
+        margin-bottom: 0.75em;
+    }
+    .toggle-nav:checked+.site-header .site-nav ul li {
+        display: none;
+    }
+    .toggle-nav:checked+.site-header .toggle-nav-btn .close {
+        display: none;
+    }
+    .toggle-nav:checked+.site-header .toggle-nav-btn .open {
+        display: block;
+    }
+}
+
+/* ---Typography--- */
+/* Phone */
+
+@media (max-width: 600px) {
+    html {
+        font-size: 12px;
+    }
+}
+
+/* Tablet */
+
+@media (min-width: 600px) and (max-width: 830px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+/* Laptop */
+
+@media (min-width: 830px) {
+    html {
+        font-size: 18px;
+    }
+}
+
+/* Desktop */
+
+@media (min-width: 1300px) {
+    html {
+        font-size: 21px;
+    }
+}
+
+@media (min-width: 1800px) {
+    html {
+        font-size: 23px;
+    }
+}
