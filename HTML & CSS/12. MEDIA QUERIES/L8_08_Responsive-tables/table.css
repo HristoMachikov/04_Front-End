@@ -1,0 +1,64 @@
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table th {
+    background: #000;
+    color: #FFF;
+}
+
+th, td {
+    border: 1px solid #999;
+    text-align: left;
+    padding: 0.3em;
+    /* width: 33%; */
+}
+
+table tbody tr:nth-child(even) {
+    background: #FFF;
+}
+
+/* Phone amd Tablet */
+
+@media (max-width: 830px) {
+    /* Force table to not be like tables anymore */
+    table, thead, tbody, th, td, tr {
+        display: block;
+    }
+    /* Hide table headers (but not display: none;, for accessibility) */
+    thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+    tr {
+        border: 1px solid #ccc;
+    }
+    td {
+        /* Behave  like a "row" */
+        border: none;
+        border-bottom: 1px solid #ccc;
+        position: relative;
+        padding-left: 20%;
+    }
+    td:before {
+        /* Now like a table header */
+        position: absolute;
+        /* Top/left values mimic padding */
+        top: 6px;
+        left: 6px;
+        width: 25%;
+        padding-right: 10px;
+        white-space: nowrap;
+        font-weight: bold;
+        /* background: #f00; */
+    }
+
+    /*
+	Label the data
+	*/
+	td:nth-of-type(1):before { content: "First Name"; }
+	td:nth-of-type(2):before { content: "Last Name"; }
+    td:nth-of-type(3):before { content: "Job Title"; }
+}

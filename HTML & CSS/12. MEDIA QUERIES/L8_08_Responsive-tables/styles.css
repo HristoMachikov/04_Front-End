@@ -1,0 +1,10 @@
+@import url('typography.css');
+@import url('reset.css');
+@import url('table.css');
+
+body {
+    /* max-width: 90%; */
+    margin: 0 auto;
+    padding: 1rem;
+    background: rgb(238, 238, 238);
+}
