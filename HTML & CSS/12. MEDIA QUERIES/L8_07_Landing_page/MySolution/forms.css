@@ -1,0 +1,23 @@
+.form-content{
+    flex: 1 0 100%;
+    padding: 1em 0;
+}
+.contact-form {
+    display: flex;
+    justify-content: center;
+}
+
+.contact-form input {
+    border: 1px solid #000;
+    padding: 0.5em;
+    background: #CCC;
+    outline: none;
+    border-radius: 0.2em;
+    margin-right: 1em;
+    flex-basis: 30%;
+}
+
+.contact-form input:hover, .contact-form input:focus {
+    border-color: purple;
+    background: #FFF;
+}

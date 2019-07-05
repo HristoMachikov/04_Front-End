@@ -1,0 +1,12 @@
+.button-main {
+    border: 1px solid #000;
+    padding: 0.5em 1em;
+    background: #CCC;
+    outline: none;
+    border-radius: 0.2em;
+}
+
+.button-main:hover, .button-main:focus {
+    border-color: purple;
+    background: #FFF;
+}

@@ -1,0 +1,81 @@
+.persons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style-type: none;
+}
+
+.persons li {
+    flex: 0 0 50%;
+    padding: 2em 0;
+}
+
+.persons li span {
+    text-align: center;
+}
+
+.person-img {
+    max-width: 100px;
+    margin: 0 auto;
+    display: block;
+    overflow: hidden;
+    position: relative;
+    border-radius: 50%;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+    margin-bottom: 1em;
+}
+
+.person-img:after {
+    display: block;
+    content: "";
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.2) inset;
+    pointer-events: none;
+    z-index: 10;
+}
+
+.person-img:before {
+    display: block;
+    content: "";
+    padding-top: 100%;
+    border-radius: 50%;
+}
+
+.person-img img {
+    display: block;
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.person-name {
+    display: block;
+    font-weight: bold;
+}
+
+.person-position {
+    display: block;
+}
+
+.person-description {
+    display: block;
+    font-weight: italic;
+}
+
+.person-description+.person-name, .person-position+.person-description {
+    padding-top: 1em;
+}
+
+@media (min-width: 830px) {
+    .persons li {
+        flex: 0 0 30%;
+    }
+}

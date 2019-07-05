@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css?family=Courgette&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font: 14px/1.5 Courgette;
+}
+
+body {
+    background: #EEE;
+}
+
+.main {
+    max-width: 1000px;
+    margin: 3em auto;
+   
+}
+.main-title {
+    text-align: center;
+    font-size:1.6em;
+    letter-spacing: 0.3em;
+}
+.sub-header {
+    text-align: center;
+    margin-left: 15em;
+    margin-bottom: 3em;
+    color: #F00;
+    letter-spacing: 0.3em;
+}
+.content ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.content ul li {
+    flex: 0 0 32%;
+    display: flex;
+    flex-direction: column;
+}
+
+.content .card-image {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    border-top-left-radius: 0.5em;
+    border-top-right-radius: 0.5em;
+}
+
+.content .card-image:before {
+    display: block;
+    content: "";
+    padding-top: 56.25%;
+}
+
+.content .card-image img {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.card-content {
+    background: #FFF;
+    border-bottom-left-radius: 0.5em;
+    border-bottom-right-radius: 0.5em;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.card-content span {
+    text-align: center;
+}
+
+.card-content .description {
+    padding-bottom: 1em;
+}
+
+.card-content .title {
+    border-bottom: 1px solid #F00;
+    padding-bottom: 1em;
+    margin-bottom: 1em;
+}
+
+.next {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: auto;
+}
+
+.next a {
+    text-decoration: none;
+    display: flex;
+    padding-left: 1em;
+}
+
+.next a i {
+    color: #F00;
+}

@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700&display=swap');
+*, *:before, *:after {
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font: 16px/1.5 'Source Sans Pro';
+}
+
+body {
+    background: #ebf0f0;
+}
+
+.main {
+    width: 400px;
+    margin: 2em auto;
+}
+
+header, .button {
+    text-align: center;
+}
+
+header {
+    border-bottom: 2px solid #007acc;
+    margin-bottom: 1em;
+    letter-spacing: 0.3em;
+    font-size: 1.4em;
+}
+
+.form-content p {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+form label {
+    flex-basis: 100%;
+    margin-left: -0.7em;
+    color: #b1aaad;
+    padding-top: 0.6em;
+}
+
+form label span {
+    color: #c9d2d8;
+    font-size: 0.7em;
+}
+
+.form-content label:before {
+    display: inline-block;
+    content: "*";
+    color: #F00;
+    padding-right: 0.2em;
+}
+
+.form-content input {
+    border: 1px solid #cde3ea;
+    padding: 0.5em;
+    margin-top: 5px;
+    border-top-right-radius: 0.3em;
+    border-bottom-right-radius: 0.3em;
+    border-left: none;
+    flex-grow: 1;
+    outline: none;
+}
+
+.form-content p>span:before {
+    display: inline-block;
+    content: '';
+    font-family: "Font Awesome 5 Pro";
+    font-weight: 900;
+    border: 1px solid #cde3ea;
+    padding: 0.5em;
+    margin-top: 5px;
+    border-top-left-radius: 0.3em;
+    border-bottom-left-radius: 0.3em;
+    /* border-right: none;  */
+    border-right-color: #5c5757;
+    border-right-width: 1px;
+    background: #FFF;
+    color: #5c5757;
+}
+
+.form-content p:nth-child(1)>span:before {
+    content: '\f007';
+}
+
+.form-content p:nth-child(2)>span:before {
+    content: '\f0e0';
+}
+
+.form-content p:nth-child(3)>span:before {
+    content: '\f3cd';
+}
+
+.form-content p:nth-child(4)>span:before {
+    content: '\f023';
+}
+
+.form-content p>span {
+    order: 1;
+}
+
+.form-content p>input {
+    order: 2;
+}
+
+.button a {
+    display: block;
+    background: #007acc;
+    color: #FFF;
+    text-decoration: none;
+    border-radius: 0.3em;
+    padding: 0.3em 0;
+    width: 100%;
+    margin-top: 1em;
+    font-size: 1.2em;
+}
