@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css?family=Abril+Fatface|Roboto:400,700,700i&display=swap');
+*, *:before, *:after {
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font: 16px/1.5 'Roboto';
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Font Awesome';
+}
+
+.main {
+    width: 1000px;
+    height: auto;
+    margin: 0 auto;
+}
+
+.header-main {
+    background: url('./image/image.jpg') no-repeat center center;
+    background-size: cover;
+    padding: 2em;
+}
+
+.header-title {
+    max-width: 200px;
+    height: auto;
+    padding: 1em 4em 1em 1em;
+    border: 2px solid rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+    border-radius: 0.2em;
+    margin-left: 1em;
+}
+
+.header-title h1 {
+    font-size: 2em;
+    line-height: 1.2;
+    border-bottom: 2px solid #FFF;
+    padding-bottom: 0.3em;
+    margin-bottom: 0.3em;
+    font-weight: bold;
+}
+
+.header-title p {
+    font-size: 0.8em;
+    padding-bottom: 1em;
+}
+
+.header-content {
+    margin-left: auto;
+    max-width: 300px;
+    height: auto;
+    color: #FFF;
+    text-align: right;
+    padding: 1em;
+    border: 2px solid rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+    border-radius: 0.2em;
+    background-image: linear-gradient(to right, #9b918a, #a79e99, #b2aca8, #beb9b7, #c9c7c6);
+    text-shadow: 2px 0 3px rgba(0, 0, 0, 0.5);
+    margin-bottom: 16em;
+}
+
+.header-content i {
+    color: #66615f;
+    padding: 1em 0;
+}
+
+/* section-main */
+
+.section-main {
+    display: flex;
+}
+
+.section-main-content {
+    flex-basis: 700px;
+    height: auto;
+    background: #f2f0f3;
+}
+
+.section-main-content header {
+    font-size: 1.2em;
+    text-transform: uppercase;
+    margin-bottom: 1em;
+}
+
+.our-services {
+    padding: 3em;
+}
+
+.our-services ul {
+    list-style: none;
+}
+
+.our-services ul li {
+    padding-bottom: 1em;
+}
+
+.our-services ul li span {
+    font-weight: bold;
+    text-transform: uppercase;
+    padding-right: 0.3em;
+}
+
+.our-services ul li span:before {
+    display: inline-block;
+    content: "\f0a9";
+    font-family: "Font Awesome 5 Pro";
+    font-weight: 900;
+    padding-right: 0.7em;
+}
+
+.contact header {
+    border-bottom: 2px solid #c0bfc0;
+    padding: 0 3em;
+}
+
+.contact ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 3em;
+}
+
+.contact ul li {
+    padding-right: 0.5em;
+}
+
+.contact ul li span {
+    font-weight: bold;
+    padding-right: 0.5em;
+}
+
+.contact form {
+    display: flex;
+}
+
+.contact form input {
+    padding: 1em;
+    color: #FFF;
+    background: #bab1ad;
+    border-radius: 0.3em;
+    flex-basis: 50%;
+    outline: none;
+}
+
+.contact form input::placeholder {
+    color: #FFF;
+}
+
+.contact form {
+    padding: 2em 3em;
+}
+
+.contact form button {
+    padding: 1em;
+    color: #FFF;
+    background: #67784d;
+    border-radius: 0.3em;
+    margin-left: 2em;
+    border-color: #67784d;
+    outline: none;
+}
+
+.section-main-results {
+    flex-basis: 300px;
+    height: auto;
+    color: #FFF;
+    background: #bab1ad;
+    padding: 1em;
+}
+
+.section-main-results ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.section-main-results ul li {
+    flex-grow: 1;
+}
+
+.section-main-results ul li:not(:last-child) {
+    padding-bottom: 5em;
+}
+
+.result-value {
+    font-size: 4em;
+    font-weight: normal;
+    line-height: 1em;
+}
+
+.result-description {
+    color: #333333;
+    text-transform: uppercase;
+}
