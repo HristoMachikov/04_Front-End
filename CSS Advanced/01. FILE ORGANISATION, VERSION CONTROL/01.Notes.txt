@@ -1,0 +1,28 @@
+www.jekyllrb.com/docs/
+BrowserSync - вдига сървар
+-не нефрешва ако се промени само  .css файла
+jekyll serve - отваря сървър
+в .yml файла изтриваме temes:
+в .md файла сетвама от layout:post -> layout:main
+създаваме нова папка _layout -> main.html
+
+git init -> Initialized empty Git repository in ...
+-> ls -lah
+-> git add . -> добавя всички файлове в текущата дир.
+-> git status
+-> git commit -m "Commit files"
+-> git remote add origin git@github.com:kdankov/
+-> git push -u origin master
+
+github generate ssh key ->  в gitbash
+
+-> git connit -am && git push
+cmder.net - падаща конзола
+
+->git log -> показва всички commit-и
+->git clone ..... koko  
+-> git cherry-pick ...Номер на commit... -връща стар конфликт
+
+->git branch fancy
+->git checkout fancy
+->git co master
