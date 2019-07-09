@@ -49,7 +49,7 @@ list-style: none outside
 ------------------------------
 
 На display-inline елемент (а-таг) не може да се слага padding
-poiter-events: none;
+pointer-events: none;
 
 www.uifaces.co
 Merriweather->font-family
