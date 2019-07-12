@@ -1,0 +1,15 @@
+.yml 
+baseurl: /Cherry-Jekyll
+{{site.baseurl}}/css/style.css
+
+clipboard maneger
+---
+location: header - променлива на ниво page
+---
+_includes
+{% include navigation.html location="header"%} - променлива на ниво partial
+location-{page.location}
+fontawesom - css
+
+variable filter
+| sligify
