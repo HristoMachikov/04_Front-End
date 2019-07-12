@@ -16,13 +16,16 @@ git init -> Initialized empty Git repository in ...
 
 github generate ssh key ->  в gitbash
 
--> git connit -am && git push
+-> git commit -am && git push
 cmder.net - падаща конзола
 
-->git log -> показва всички commit-и
-->git clone ..... koko  
+-> git log -> показва всички commit-и
+-> git clone ..... koko  
 -> git cherry-pick ...Номер на commit... -връща стар конфликт
 
-->git branch fancy
-->git checkout fancy
-->git co master
+-> git branch fancy
+-> git checkout fancy
+-> git co master
+-> git reset --hard HEAD -връща ни на последната промяна commit-ната в gitHub
+
+try.github.io
