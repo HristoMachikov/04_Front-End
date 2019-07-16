@@ -4,3 +4,5 @@ steps(3)
 transform :rotate(),skwe()
 opacity и trsnsform не променят layout-a
 всички други пропартита (padding, border, et.) слагането на анимация забавя
+
+nomainnav = 1 - в property in animation
