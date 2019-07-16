@@ -1,0 +1,5 @@
+.site {
+    max-width: var(--layout-main-width);
+    margin: 0 auto;
+    padding: 0.5em 2em;
+}

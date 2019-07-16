@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i&display=swap');
+*, *:before, *:after {
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 16px;
+    font-family: "PT Sans", sans-serif;
+    line-height: 1.5;
+    box-sizing: border-box;
+}
+
+p, ul, ol {
+    padding-bottom: 1em;
+}
+
+ul, ol {
+    padding-left: 2em;
+}
+
+ul ul, ul ol, ol ul, ol ol {
+    padding-left: 0.5em;
+    padding-bottom: 0.5em;
+}
+
+ol>li>ol>li {
+    list-style-type: lower-roman;
+}
+
+article {
+    padding-bottom: 2rem;
+}
+
+body, table, form, select, option, input, textarea {
+    font: inherit;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+    font-size: 1em;
+    padding-bottom: 0.7em;
+}
+
+h1 {
+    font-size: var(--font-size-h1, 30px);
+    letter-spacing: 0.1em;
+}
+
+h3 {
+    font-size: var(--font-size-h3, 20px);
+    font-style: italic;
+}

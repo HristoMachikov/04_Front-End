@@ -13,3 +13,5 @@ fontawesom - css
 
 variable filter
 | sligify
+
+при използване на 'calc' в .css файл се слагат разстояния м/у стойностите

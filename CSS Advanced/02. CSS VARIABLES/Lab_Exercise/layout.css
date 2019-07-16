@@ -1,0 +1,15 @@
+.site {
+    max-width: var(--layout-main-width);
+    margin: 0 auto;
+    padding: 0 2em;
+}
+
+@media (min-width: 830px) {
+    .site-header {
+        display: flex;
+    }
+
+    .site-header nav {
+        margin-left: auto;
+    }
+}

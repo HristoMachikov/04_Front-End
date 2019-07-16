@@ -1,0 +1,7 @@
+:root {
+    --font-size-root-normal: 14px;
+    --font-size-root-large: 16px;
+    --font-size-root-big: 18px;
+
+    --layout-main-width: 60em;
+}
