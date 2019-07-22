@@ -1,0 +1,70 @@
+*, *:before, *:after {
+    padding: 0;
+    margin: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    margin: 0 auto;
+    width: 90%;
+    height: 90%;
+    position: relative;
+}
+
+.container::before {
+    display: block;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to top, #FCC988, #C98533);
+}
+
+.container::after {
+    display: block;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to top, #E7ECED, #8495A0);
+}
+
+.container:hover:after {
+    animation: opacityIn 0.5s linear;
+    animation-fill-mode: forwards;
+}
+.container:after {
+    animation: opacityOff 0.5s linear;
+    animation-fill-mode: forwards;
+}
+
+@keyframes opacityIn {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes opacityOff {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}

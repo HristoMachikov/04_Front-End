@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap');
+:root {
+    --time-interval: 0.2s;
+}
+
+html {
+    font: 16px/1.5 PT Sans;
+    height: 100%;
+}
+
+body {
+    height: 100%;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.container li {
+    list-style: none outside;
+    padding-bottom: 0.8em;
+}
+
+.container span {
+    padding-left: 0.5em;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.container i {
+    font-size: 1.2em;
+}

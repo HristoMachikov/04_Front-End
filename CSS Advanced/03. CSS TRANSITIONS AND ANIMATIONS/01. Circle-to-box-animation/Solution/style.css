@@ -1,0 +1,35 @@
+:root {
+    --square-site-length: 200px;
+}
+
+html, body{
+    height: 100%;
+   }
+body{
+    display: flex;
+    align-items: center;
+}
+.box-circle {
+  
+    width: var(--square-site-length);
+    height: var(--square-site-length);
+    margin: 0 auto;
+    animation: circle-square 1.6s ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes circle-square {
+    0% {
+        border-radius: 50%;
+        background: red;
+        transform: scale(0.7);
+    }
+    50% {
+    }
+    100% {
+        border-radius: 0;
+        background-color: orange;
+        transform: scale(1.5);
+    }
+}
