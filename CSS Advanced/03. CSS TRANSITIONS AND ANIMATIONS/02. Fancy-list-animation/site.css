@@ -22,14 +22,14 @@ body {
 .container li {
     list-style: none outside;
     padding-bottom: 0.8em;
+    font-size: 1.4em;
 }
 
 .container span {
     padding-left: 0.5em;
-    font-weight: bold;
-    font-size: 1.2em;
 }
 
 .container i {
     font-size: 1.2em;
+    width: 1.2em;
 }

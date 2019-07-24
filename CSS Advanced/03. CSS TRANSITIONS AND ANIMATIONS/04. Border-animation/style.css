@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap');
+html {
+    font: 16px/1.5 PT Sans;
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    background: #EEE;
+}
+
+.container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container a {
+    text-decoration: none;
+    color: #000;
+    text-transform: uppercase;
+    padding: 0.5em 2em;
+    outline: 5px solid darkblue;
+    margin-left: 1em;
+    background: #fff;
+    font-size: 1.2em;
+    transition: outline 0.5s linear;
+}
+
+.container a:hover {
+    outline-width: 10px;
+}
