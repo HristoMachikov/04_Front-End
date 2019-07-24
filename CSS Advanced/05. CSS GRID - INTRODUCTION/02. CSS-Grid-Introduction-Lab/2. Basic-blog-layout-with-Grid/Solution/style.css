@@ -1,0 +1,27 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2em;
+    padding: 2em;
+    align-items: stretch;
+}
+
+header, main, aside, footer {
+    background: #000;
+    color: #FFF;
+    padding: 2em 0 2em 2em;
+    border-radius: 0.2em;
+}
+
+header, footer {
+    grid-column: 1 / span 3;
+}
+
+main {
+    grid-column: 1 / span 2;
+}
