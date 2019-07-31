@@ -1,0 +1,25 @@
+https://jekyllrb.com/tutorials/navigation/
+@for $i from 1 through 4{
+$:nth-child(#{$i}) { anim:$i *1s; }
+}
+
+@mixin fs($size){
+font-size: $size;
+}
+@include fs(2em);
+
+@mixin bp($point){
+font-size: $size;
+}
+
+less и sass(scss) са пред-процесорни операции
+
+less compyle css in runtime in browser
+
+@import 'layout';
+
+Rename _assets/css to _assets/scss
+Rename _assets/scss/*.css to _*.scsss, exept site.scss
+Update site.scss, remove url func and css extentions
+Update gulpfile.js, uncomment SASS compile, update ALL paths
+Re-lunch gulp
