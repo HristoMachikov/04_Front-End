@@ -1,0 +1,50 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+$base-size-elem: 50px;
+
+body{
+    background: #000;
+    padding-top: 150px;
+}
+
+.container {
+    max-width: 100%;
+    height: 50vh;
+    background: #FFF;
+    padding: $base-size-elem;
+
+    .items {
+        display: flex;
+        list-style: none outside;
+
+        li {
+            width: $base-size-elem;
+            height: $base-size-elem;
+            background: #000;
+            margin-right: 10px;
+            opacity: 0;
+            animation: slideDown 0.2s linear;
+            animation-fill-mode: both;
+
+            @for $i from 1 through 5 {
+                &:nth-child(#{$i}){
+                    animation-delay: 0.15s * $i;
+                }
+            }
+        }
+    }
+}
+
+@keyframes slideDown {
+    from{
+        opacity: 0;
+        transform: translateY(-5em);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

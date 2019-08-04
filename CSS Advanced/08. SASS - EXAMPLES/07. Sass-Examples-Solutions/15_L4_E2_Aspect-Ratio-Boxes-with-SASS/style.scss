@@ -1,0 +1,73 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+@mixin mq($basePoint: null){
+    @if $basePoint == phone{
+        @media (max-width:640px){
+            @content;
+        }
+    }
+    @else if $basePoint == null {
+        @media (min-width:640px){
+            @content;
+        }
+    }
+}
+@mixin aspect-ratio($width, $height) {
+    position: relative;
+    &:before{
+        display: block;
+        content: " ";
+        width: 100%;
+        padding-top: ($height / $width) * 100%;
+    }
+
+    > .content {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+}
+
+.container {
+    max-width: 100%;
+    display: flex;
+    padding: 15px;
+    @include mq(phone){
+        flex-wrap:wrap;
+     }
+  
+    div {
+      height: 100%;
+      flex-basis: 20%;
+      margin-left: 15px;
+      background: #000;
+      border-radius:5px;
+      color: #FFF;
+      text-align:center;
+      @include mq(phone){
+         flex-basis: 13.33%;
+      }
+  }
+  .ar-1x1{
+    @include aspect-ratio(1,1);
+  }
+  .ar-16x9{
+    @include aspect-ratio(16,9);
+  }
+  .ar-16x10{
+    @include aspect-ratio(16,10);
+  }
+  .ar-9x16{
+    @include aspect-ratio(9,16);
+  }
+  .ar-3x2{
+    @include aspect-ratio(3,2);
+  }
+  .ar-2x3{
+    @include aspect-ratio(2,3);
+  }
+}

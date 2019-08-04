@@ -1,0 +1,4 @@
+{{ forloop.index }}
+input:cheched ~ a
+input:cheched ~ lable 
+google maps api
